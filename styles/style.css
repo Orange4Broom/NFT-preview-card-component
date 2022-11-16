@@ -19,22 +19,96 @@ body #main-div {
   height: 600px;
   width: 350px;
   min-width: 300px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: hsl(216deg, 50%, 16%);
-  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.6862745098);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6862745098);
 }
 body #main-div #image {
-  max-height: 300px;
+  height: 300px;
   max-width: 300px;
-  border-radius: 5px;
+  min-width: 200px;
+  border-radius: 10px;
+  background-image: url(/images/image-equilibrium.jpg);
+  background-size: cover;
+}
+body #main-div #background-overlay {
+  visibility: hidden;
+}
+body #main-div #image:hover #background-overlay {
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 36px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: rgba(0, 255, 247, 0.5137254902);
 }
 body #main-div #header {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 22px;
   font-weight: 700;
   color: hsl(0deg, 0%, 100%);
 }
+body #main-div #header:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
 body #main-div #content {
   max-width: 290px;
   font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: hsl(215deg, 51%, 70%);
+}
+body #main-div #info-eth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid hsl(215deg, 32%, 27%);
+}
+body #main-div #info-eth #ethereum {
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(178deg, 100%, 50%);
+}
+body #main-div #info-eth #ethereum i {
+  margin-right: 5px;
+}
+body #main-div #info-eth #days-left {
+  font-weight: 400;
+  color: hsl(215deg, 51%, 70%);
+}
+body #main-div #info-eth #days-left i {
+  margin-right: 5px;
+}
+body #main-div #creator {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+body #main-div #creator #profile-image {
+  height: 35px;
+  width: 35px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  background-image: url(/images/image-avatar.png);
+  background-size: cover;
+}
+body #main-div #creator #create {
+  color: hsl(215deg, 51%, 70%);
+}
+body #main-div #creator #create #profile-link {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+body #main-div #creator #create #profile-link:hover {
+  color: hsl(178deg, 100%, 50%);
 }/*# sourceMappingURL=style.css.map */
