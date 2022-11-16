@@ -74,7 +74,7 @@ body #main-div #info-eth {
 }
 body #main-div #info-eth #ethereum {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: hsl(178deg, 100%, 50%);
 }
 body #main-div #info-eth #ethereum i {
